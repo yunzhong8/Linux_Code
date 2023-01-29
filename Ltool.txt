@@ -1,0 +1,36 @@
+需要安装的内容
+1、chipLab
+	1.1工具链需要安装内容
+	gcc工具链：loongarch32r
+	nemu模拟器
+	system_newlib ，
+	
+ 如何使用verilator（需要安装吗）
+ cd chiplab
+ cd sims
+ cd verilator
+ cd run_prog
+ 
+ ./configure.sh  --help
+./configure.sh --run func/func_lab16
+make 测试程序
+运行结束文件放在：log/func/中：生成func_lab16_log文件
+
+处理核（CPU）在：ip/mycpu,会运行mycpu的.v文件和nemu（c语言级的cpu）运行过程进行trance比对
+打开波形：
+进入；chiiplab/sims/verilator/run_prog目录
+vim Makefile_run:编辑makefile_run文件
+波形文件名:simu_trance.fst文件，在verilator的run_prog文件中
+查看波形方式：
+gtkwave log/func/func_labx_log/simu_trance.fst查看波形
+没有安装：newlib导致运行错误
+重新运行，要make clean 将make清理
+randdom文件：
+
+综合
+在：fpga/loongson/system_run
+在用vivado打开.xpr文件
+
+不用vivado原因：
+vivado无法启动内核，不方便验证操作系统
+
