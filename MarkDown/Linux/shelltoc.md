@@ -1,3 +1,24 @@
+
+Table of Contents
+=================
+
+* [shell编程笔记](#shell编程笔记)
+   * [Shell](#shell)
+      * [什么是shell](#什么是shell)
+      * [shell类型](#shell类型)
+      * [编码格式：](#编码格式)
+      * [注释符号](#注释符号)
+      * [使用流程](#使用流程)
+      * [shell案例2](#shell案例2)
+      * [符号：](#符号)
+      * [变量：](#变量)
+      * [字符串拼接](#字符串拼接)
+      * [接受用户输入](#接受用户输入)
+      * [删除变量](#删除变量)
+      * [shell内部执行sudo名](#shell内部执行sudo名)
+         * [使用文本块输入重定向](#使用文本块输入重定向)
+
+<!-- Created by https://github.com/ekalinin/github-markdown-toc -->
 # shell编程笔记
 
 ## Shell

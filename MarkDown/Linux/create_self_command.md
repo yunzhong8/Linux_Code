@@ -24,6 +24,8 @@ gcc file1 -o file1
 我假设您在主目录 ~/my_script.sh 中创建了脚本。只需打开一个终端并键入以下命令，将 SCRIPTNAME 替换为您要为其提供的名称。此名称将是您必须键入以运行它的命令。 .sh 文件扩展名不是必需的。
 ```
 sudo mv ~/myscript.sh /usr/local/bin/SCRIPTNAME
+由于我想保留sheel源文件，我使用cp命令
+sudo cp ~/myscript.sh /usr/local/bin/SCRIPTNAME
 ```
 ## 3. 设置正确的所有者和权限：
 该脚本应该由 root 拥有并可写，但对每个人都可读和可执行。下面的两个命令确保了这一点：
